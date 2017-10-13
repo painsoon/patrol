@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rdbutton">#049f04</color>
+    <color name="modeyellow">#e9fad54d</color>
+    <color name="modered">#ebfa74ba</color>
+    <color name="modegreen">#e585fc3b</color>
+    <color name="addpath">#e439fcf5</color>
+    <color name="add">#f52af5b1</color>
+    <color name="modebule">#f302149b</color>
+    <color name="light_green">#78b725</color>
+    <color name="genearatebule">#5aaef0</color>
+    <color name="coloralter">#fd1520</color>
+    <color name="safepoint">#20d409</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorRed">#ec4614</color>
+    <color name="colorRed2">#e0f13022</color>
+    <color name="green">#4eab24</color>
+    <color name="white">#eef7f3f3</color>
+    <color name="blue">#f544a9f7</color>
+    <color name="black">#000000</color>
+    <color name="translateBlack">#eb191919</color>
+    <color name="border_clo">#b4b4b4</color>
+    <color name="text_clo">#333</color>
+    <color name="colorText">#f3bec5cc</color>
+
+</resources>

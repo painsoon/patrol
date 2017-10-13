@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/timg1"
+    tools:context="com.psn.patrol.serverfragment.PatrolInfoAty">
+
+    <include layout="@layout/main_head"/>
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="按日期查询"
+        android:background="@drawable/a1"
+        android:id="@+id/searchBydate"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        style="@style/bg_line"
+        ></LinearLayout>
+
+    <TextView
+        android:id="@+id/chackDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="今日的巡检情况："
+        android:textSize="23sp" />
+
+    <!--<LinearLayout-->
+        <!--style="@style/bg_line"-->
+        <!--&gt;</LinearLayout>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:id="@+id/path_name"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="hsdkjfh"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--/>-->
+    <LinearLayout
+        style="@style/bg_line"
+        ></LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"></ListView>
+
+
+</LinearLayout>

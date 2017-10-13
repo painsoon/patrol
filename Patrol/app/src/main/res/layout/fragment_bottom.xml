@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginBottom="3dp"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:id="@+id/rgBottom1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_business"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/skin_tabbar_icon_at_select1"
+            android:gravity="center"
+            android:text="业务管理"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rd_userOperate"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/skin_tabbar_icon_at_select2"
+            android:gravity="center"
+            android:text="巡逻员管理"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context="com.psn.patrol.serveractivity.LoginAty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <EditText
+            android:id="@+id/gs"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:hint="公司"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:singleLine="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:hint="@string/inputun"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" />
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:hint="@string/inputpw"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_type"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:elevation="10dp"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        android:text=  "@string/loginbt" />
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.psn.patrol">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 相机 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <!-- 百度地图API所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问精确位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/appname"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appname"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".serveractivity.LoginAty" />
+        <activity android:name=".serveractivity.OperationAdminAty" />
+        <activity android:name=".clientactivity.ClientAty" />
+        <activity android:name=".clientactivity.PatrolSituationAty">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="EWSryNHDPvp9XfSN8K9GIEcBSsflk8O6" />
+        <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".clientactivity.BaiDuMapAty" />
+        <activity android:name=".clientactivity.RescueAty" />
+        <activity
+            android:name=".clientactivity.ExceptionAty"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".clientactivity.photoactivity.TestPicActivity" />
+        <activity android:name=".clientactivity.photoactivity.BitmapCache" />
+        <activity android:name=".clientactivity.photoactivity.ImageGridActivity" />
+        <activity android:name=".clientactivity.photoactivity.PhotoActivity" />
+        <activity android:name=".clientactivity.SelectPathAty" />
+        <activity android:name=".clientactivity.Weather_AddcityActivity" />
+        <activity android:name=".clientactivity.WeatherActivity" />
+        <activity android:name=".serverfragment.AddPathListAty" />
+        <activity android:name=".serverfragment.AddPathInfoAty" />
+        <activity android:name=".serverfragment.ExceptionInfoAty" />
+        <activity android:name=".serverfragment.PatrolInfoAty" />
+        <activity android:name=".serverfragment.PatrolTeskAty" />
+        <activity android:name=".serverfragment.ChangeOrderAty" />
+        <activity android:name=".serverfragment.ShowException" />
+        <activity android:name=".serverfragment.BindPathAty" />
+        <activity android:name=".serverfragment.ChangeTagOrderAty"></activity>
+    </application>
+
+</manifest>

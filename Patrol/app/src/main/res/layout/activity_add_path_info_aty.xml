@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.psn.patrol.serverfragment.AddPathInfoAty">
+
+    <include layout="@layout/main_head"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="路 线 名 称 ："
+                android:layout_alignParentBottom="true"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:id="@+id/et_path_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:ems="10"
+                />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="检查员编号："-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--/>-->
+        <!--<EditText-->
+        <!--android:id="@+id/et_guy_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toRightOf="@+id/textView2"-->
+        <!--android:layout_toEndOf="@+id/textView2"-->
+        <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检 查 时 间 ："
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                />
+            <EditText
+                android:id="@+id/et_time_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3"
+                android:ems="10"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/add_tag_bt"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/a1"
+            android:text="添加巡检点" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tag_noScrollgridview"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="8dp"
+                android:scrollbars="none"
+                android:numColumns="4"
+                android:gravity="top"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/okadd_bt"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/a1"
+            android:layout_marginBottom="8dp"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>
